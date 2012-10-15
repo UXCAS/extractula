@@ -7,7 +7,6 @@ require 'loofah'
 require 'domainatrix'
 require 'extractula/extracted_content'
 require 'extractula/extractor'
-require 'extractula/custom_extractors'
 
 module Extractula
   VERSION = "0.0.11"
