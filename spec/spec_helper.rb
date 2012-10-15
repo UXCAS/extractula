@@ -1,5 +1,5 @@
 require "rubygems"
-require "spec"
+require "rspec"
 
 # gem install redgreen for colored test output
 begin require "redgreen" unless ENV['TM_CURRENT_LINE']; rescue LoadError; end

@@ -54,4 +54,10 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<nokogiri>, ["> 0.0.0"])
     s.add_dependency(%q<loofah>, [">= 0.4.2"])
   end
+
+  s.add_dependency(%q<typhoeus>)
+  s.add_dependency(%q<domainatrix>)  
+  s.add_development_dependency(%q<rake>, [">= 0"])  
+  s.add_development_dependency(%q<rspec>, [">= 0"])    
+
 end

@@ -28,11 +28,11 @@ describe "extracting from a YouTube page" do
   end
 
   it "extracts the content" do
-    @extracted_content.content.should == "A Baby Panda Sneezing\n\nhttp://www.twitter.com/_jam..."
+    @extracted_content.content.should == "A Baby Panda SneezingOriginal footage taken and being used with kind permission of LJM Productions Pty. Ltd.,/Wild Candy Pty. Ltd. Authentic t-shirts http://www.sneezingbabypanda.com*The link in the video is at the request of the original owner of the footage. Do NOT ask for your link to be added as I will not respond. Thank you."
   end
 
   it "extracts the main video" do
-    @extracted_content.video_embed.should == "<object width=\"425\" height=\"344\"><param name=\"movie\" value=\"http://www.youtube.com/v/FzRH3iTQPrk&fs=1\"></param><param name=\"allowFullScreen\" value=\"true\"></param><param name=\"allowscriptaccess\" value=\"always\"></param><embed src=\"http://www.youtube.com/v/FzRH3iTQPrk&fs=1\" type=\"application/x-shockwave-flash\" width=\"425\" height=\"344\" allowscriptaccess=\"always\" allowfullscreen=\"true\"></embed></object>"
+    @extracted_content.video_embed.should == "\u003ciframe width=\"459\" height=\"344\" src=\"http:\/\/www.youtube.com\/embed\/FzRH3iTQPrk?fs=1\u0026feature=oembed\" frameborder=\"0\" allowfullscreen\u003e\u003c\/iframe\u003e"
   end
 
 end

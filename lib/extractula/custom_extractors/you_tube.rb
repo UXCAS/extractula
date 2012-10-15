@@ -3,7 +3,7 @@ module Extractula
     include Extractula::OEmbed
     domain              'youtube'
     media_type          'video'
-    content_path        '.description'
+    content_path        '#eow-description'
     oembed_endpoint     'http://www.youtube.com/oembed'
   end
 end
