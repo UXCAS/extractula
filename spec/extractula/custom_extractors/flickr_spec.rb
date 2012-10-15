@@ -8,7 +8,7 @@ describe Extractula::Flickr do
     @html = Nokogiri::HTML::Document.new
   end
   
-  it "can extract videos from flickr.com" do
+  it "can extract photos from flickr.com" do
     Extractula::Flickr.can_extract?(@url, @html).should be_true
   end
   
@@ -17,7 +17,7 @@ describe Extractula::Flickr do
   end
 end
 
-describe "extracting from a YouTube page" do
+describe "extracting from a Flickr page" do
   
   before do
     @response = Extractula::OEmbed::Response.new(read_test_file("flickr-oembed.json"))

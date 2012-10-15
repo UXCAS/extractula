@@ -3,7 +3,7 @@ module Extractula
     include Extractula::OEmbed
     domain              'vimeo'
     media_type          'video'
-    oembed_endpoint     'http://www.vimeo.com/api/oembed.json'
+    oembed_endpoint     'http://vimeo.com/api/oembed.json'
     
     def content
       oembed['description']

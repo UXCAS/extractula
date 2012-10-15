@@ -16,7 +16,7 @@ module Extractula
       if http_response.code == 200
         Extractula::OEmbed::Response.new(http_response.body)
       else
-        # do something
+        raise "Error: #{http.response.code}"
       end
     end
     
